@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pricing Page</title>
+</head>
+<body>
+                <div class="top-banner ">
+                    <p class="current-plan">Your current Plan</p>
+                    <p class="plan-type">Starter Trail . 500MAUs</p>
+                </div>
+                <div class="container">
+                    <div class="d-flex flex-column">   
+                            <button onclick="torupee()" class="bol">Rupee</button>
+                            <button onclick="topound()" class="bol">Pound</button>
+                            <button onclick="toeuro()" class="bol">Euro</button>
+                    </div>
+                    <h1 class="title">Choose a plan</h1>
+                    <div class="toggle-switch">
+                        <span>Billed anually</span>
+                        <input  type="checkbox" class="toggler">
+                        <span>Billed monthly</span>
+                    </div>
+                    <div class="cards">
+                        <div class="card" id="card-1">
+                            <h1 class="card-title">Starter</h1>
+                            <h2 class="card-price" id="starter-price"><span>19 dollors</span></h2>
+                            <ul class="card-plan">
+                                <li>500MAUs</li>
+                                <li>3 projects</li>
+                                <li>unlimited guides</li>
+                                <li>unlimited flows</li>
+                                <li>unlimited branded themes</li>
+                                <li>Email support</li>
+                            </ul>
+                            <button type="button" class="card-btn">Choose plan</button>
+                        </div>
+                        <div class="card active" id="card-2">
+                            <h1 class="card-title">Pro</h1>
+                            <h2 class="card-price" id="pro-price"><span>99 dollors</span></h2>
+                            <select id="maus">
+                                <option value="500">500 MAUs</option>
+                                <option value="100">1000 MAUs</option>
+                                <option value="1500">1500 MAUs</option>
+                                <option value="2000">2000 MAUs</option>
+                                <option value="2500">2500 MAUs</option>
+                            </select>
+                            <span class="note">monthly active users</span>
+                            <ul class="card-plan">
+                                <li>All starter features ,plus : </li>
+                                <li>Unlimited projects</li>
+                                <li>Unlimited fully customizable themes</li>
+                                <li>a dedicated customer Success Manager</li>
+                            </ul>
+                            <button type="button" class="card-btn">Choose plan</button>
+                        </div>
+
+                        <div class="card" id="card-3">
+                            <h1 class="card-title">Enterprise</h1>
+                            <h2 class="card-price">Let's Talk!</h2>
+                            <ul class="card-plan">
+                                <li>All pro features</li>
+                                <li>unlimited MAUs</li>
+                                <li>dedicated environment</li>
+                                <li>Enterprise account administration</li>
+                                <li>Premium account and services</li>
+                            </ul>
+                            <button type="button" class="card-btn">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+    <script src="main.js"></script>
+</body>
+</html>
